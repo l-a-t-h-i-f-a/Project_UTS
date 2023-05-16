@@ -1,0 +1,74 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 16, 2023 at 08:52 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `ikan`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ikan2`
+--
+
+CREATE TABLE `ikan2` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `warna` varchar(100) NOT NULL,
+  `jenis` varchar(100) NOT NULL,
+  `kelamin` varchar(100) NOT NULL,
+  `makanan` varchar(100) NOT NULL,
+  `tanggal` varchar(25) DEFAULT NULL,
+  `tambah` mediumtext NOT NULL,
+  `harga` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `ikan2`
+--
+
+INSERT INTO `ikan2` (`id`, `nama`, `warna`, `jenis`, `kelamin`, `makanan`, `tanggal`, `tambah`, `harga`) VALUES
+(12, 'Nila', 'Orange', 'konsumsi', 'cowo', 'Plankton dan fitoplankton ', '2023-05-13', 'Ikan konsumsi yang rasanya enak.', 30000),
+(15, 'Cupang', 'Kuning', 'hias', 'cowo', 'Takari', '2023-05-15', 'Ikan yang cantik.', 50000),
+(45, 'Lele', 'Abu', 'konsumsi', 'cewe', 'Pelet', '1999', 'Ikan air tawar.', 10000);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `ikan2`
+--
+ALTER TABLE `ikan2`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `ikan2`
+--
+ALTER TABLE `ikan2`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
